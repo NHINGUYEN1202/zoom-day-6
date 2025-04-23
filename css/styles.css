@@ -263,7 +263,7 @@ body {
 .signup-form {
     width: 480px;
     padding: 40px 30px;
-    border: 2px solid rgb(238, 238, 238);   
+    border: 2px solid rgb(238, 238, 238);
     border-left: none;
     border-radius: 0 20px 20px 0;
 }
@@ -326,7 +326,7 @@ body {
 }
 
 .form-input:focus {
-    border: 2px solid  #747474;
+    border: 2px solid #747474;
 }
 
 input:invalid:not(:focus):not(:placeholder-shown):not(.date-input) {
@@ -337,7 +337,6 @@ input:invalid:not(:focus):not(:placeholder-shown):not(.date-input) {
     border: 2px solid #666666;
     box-shadow: 10px 10px 10px rgba(147, 158, 170, 0.5);
 }
-
 
 /* ========== Froggy pro ========== */
 
@@ -365,4 +364,82 @@ input:invalid:not(:focus):not(:placeholder-shown):not(.date-input) {
     text-align: center;
     font-style: italic;
     margin: 16px 0 24px;
+}
+
+/* ========== Product list ========== */
+
+.books-list-wrapper {
+    background-color: #ececec;
+    font-size: 1.6rem;
+}
+
+.books-list-heading {
+    font-size: 4rem;
+    color: #464647;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.books-list {
+    padding: 40px 0;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 50px;
+}
+
+.book-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(54, 51, 51, 0.1);
+    padding: 40px;
+    text-align: center;
+    width: 330px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card img {
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.book-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 140px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.book-card h2 {
+    font-size: 2.2rem;
+    flex-grow: 1;
+}
+
+.book-card .book-price {
+    font-size: 1.6rem;
+    color: #717171;
+}
+
+.book-card .buy-btn {
+    background-color: #333333;
+    color: white;
+    border: none;
+    line-height: 46px;
+    display: block;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.book-card .buy-btn:hover {
+    opacity: 0.7;
+}
+
+.book-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(110, 110, 110, 0.5);
 }
