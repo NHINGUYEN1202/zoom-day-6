@@ -125,10 +125,10 @@ body {
 
 .card-wrapper {
     width: 260px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;   
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card-body {  
+.card-body {
     padding: 30px 0;
     min-height: 340px;
     display: flex;
@@ -174,7 +174,6 @@ body {
     box-shadow: 0 10px 20px rgba(210, 210, 210, 0.5);
 }
 
-
 .card-body h2 {
     font-size: 2.2rem;
 }
@@ -214,4 +213,32 @@ body {
 .card-btn:hover {
     background-color: #fff;
     color: #100448;
+}
+
+/* ========== Froggy pro ========== */
+
+.froggy-wrapper {
+    max-width: 900px;
+    margin: auto;
+}
+
+.froggy-wrapper .heading {
+    font-size: 4rem;
+    padding: 30px 0 40px;
+    text-align: center;
+}
+
+.froggy-wrapper .img {
+    width: 100%;
+}
+
+.froggy-wrapper .img-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.froggy-wrapper .img-caption {
+    text-align: center;
+    font-style: italic;
+    margin: 16px 0 24px;
 }
