@@ -18,6 +18,10 @@ em {
     font-style: italic;
 }
 
+ul {
+    list-style: disc;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -38,10 +42,31 @@ body {
 .cv-wrapper {
     background-color: #fff;
     margin: 28px auto;
-    padding: 50px 76px;
     max-width: 960px;
     font-size: 1.6rem;
     line-height: 1.5;
+    display: flex;
+    padding: 0 10px;
+}
+
+.left-column {
+    padding: 50px 40px;
+    min-width: 300px;
+    background-color: #010d3f;
+    color: white;
+    line-height: 1.8;
+}
+
+.left-column .profile-img {
+    margin-bottom: 30px;
+}
+
+.left-column img {
+    width: 100%;
+}
+
+.right-column {
+    padding: 50px 40px;
 }
 
 .divider {
@@ -49,38 +74,33 @@ body {
     margin: 10px 0 18px;
 }
 
-.cv-wrapper .header {
+.left-column .divider {
+    border-color: white;
+}
+
+.cv-wrapper .heading {
+    font-size: 2.6rem;
     text-align: center;
     margin-bottom: 38px;
 }
 
-.cv-wrapper .header .name {
-    font-size: 2.6rem;
+.section-title {
+    font-size: 1.8rem;
 }
 
 .work-title-date-group {
-    font-size: 0;
-}
-
-.work-title-date-group .work-title,
-.work-title-date-group .work-dates {
-    display: inline-block;
-    font-size: 1.6rem;
-    width: 50%;
-}
-
-.work-title-date-group .work-dates {
+    display: flex;
+    justify-content: space-between;
     font-weight: bold;
-    text-align: right;
 }
 
-.work-experience .work-details {
+.cv-wrapper ul {
     padding-left: 20px;
     margin: 20px 0 20px;
     text-align: justify;
 }
 
-.work-experience .work-detail-item {
+.cv-wrapper li {
     padding-left: 12px;
 }
 
