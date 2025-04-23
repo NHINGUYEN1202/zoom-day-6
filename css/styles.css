@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+i,
+em {
+    font-style: italic;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    font-size: 1.6rem;
+}
+
+/* ========== CV ========== */
+
+.cv-body {
+    background-color: #ccc;
+}
+
+.cv-wrapper {
+    background-color: #fff;
+    margin: 28px auto;
+    padding: 50px 76px;
+    max-width: 960px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.divider {
+    border-bottom: 2px solid black;
+    margin: 10px 0 18px;
+}
+
+.cv-wrapper .header {
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.cv-wrapper .header .name {
+    font-size: 2.6rem;
+}
+
+.work-title-date-group {
+    font-size: 0;
+}
+
+.work-title-date-group .work-title,
+.work-title-date-group .work-dates {
+    display: inline-block;
+    font-size: 1.6rem;
+    width: 50%;
+}
+
+.work-title-date-group .work-dates {
+    font-weight: bold;
+    text-align: right;
+}
+
+.work-experience .work-details {
+    padding-left: 20px;
+    margin: 20px 0 20px;
+    text-align: justify;
+}
+
+.work-experience .work-detail-item {
+    padding-left: 12px;
+}
+
+.education {
+    margin-top: 20px;
+}
+
+/* ========== Pricing table ========== */
+
+.pricing-table-wrapper {
+    height: 100vh;
+    background-color: #5b5b5b;
+    color: rgb(255, 255, 255);
+}
+
+.card-group {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pricing-table-heading {
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 50px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.card-header {
+    background-color: #100448;
+    text-align: center;
+    padding: 30px;
+    border-bottom: 1px solid white;
+}
+
+.card-header .card-price {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-wrapper {
+    width: 260px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;   
+}
+
+.card-body {  
+    padding: 30px 0;
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-wrapper:first-child {
+    background-color: #1a3e1a;
+    background-image: linear-gradient(132deg, #1a3e1a 8%, #60ab26 73%);
+}
+
+.card-wrapper:nth-child(2) {
+    background-color: #ff2525;
+    background-image: linear-gradient(147deg, #ff2525 22%, #ffe53b 100%);
+}
+
+.card-wrapper:nth-child(2) .card-header {
+    background-color: #522000;
+    color: #ffffff;
+    padding: 30px;
+    border-bottom: 1px solid white;
+}
+
+.card-wrapper:last-child {
+    background-color: #182cb4;
+    background-image: linear-gradient(147deg, #182cb4 41%, #269da9 100%);
+}
+
+.card-wrapper:first-child:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(210, 210, 210, 0.5);
+}
+
+.card-wrapper:nth-child(2):hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(210, 210, 210, 0.5);
+}
+
+.card-wrapper:last-child:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(210, 210, 210, 0.5);
+}
+
+
+.card-body h2 {
+    font-size: 2.2rem;
+}
+
+.card-body ul {
+    width: 70%;
+    text-align: left;
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+.card-body ul li {
+    border-bottom: 1px solid white;
+}
+
+.card-body ul li::before {
+    content: "✓";
+    font-size: 1.8rem;
+    margin-right: 6px;
+    color: #93d85e;
+    font-weight: bold;
+}
+
+.card-btn {
+    padding: 0 60px;
+    height: 46px;
+    font-size: 1.6rem;
+    line-height: 46px;
+    background-color: transparent;
+    color: white;
+    display: inline-block;
+    border-radius: 20px;
+    text-decoration: none;
+    /* margin-bottom: 30px; */
+    border: 1px solid white;
+}
+.card-btn:hover {
+    background-color: #fff;
+    color: #100448;
+}
