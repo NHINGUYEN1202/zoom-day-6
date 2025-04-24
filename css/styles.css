@@ -410,13 +410,13 @@ input:invalid:not(:focus):not(:placeholder-shown):not(.date-input) {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    min-height: 140px;
-    justify-content: space-between;
+    min-height: 160px;
     margin-top: 20px;
 }
 
 .book-card h2 {
     font-size: 2.2rem;
+    line-height: 1.2;
     flex-grow: 1;
 }
 
